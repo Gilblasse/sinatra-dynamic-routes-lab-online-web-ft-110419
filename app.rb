@@ -35,12 +35,11 @@ class App < Sinatra::Base
       @num2 - @num1
     when 'multiply'
       @num1 * @num2
+    when 'divide'
+      @num1 / @num2
+    else 
+      'invalid operation'
+    end
   end
-
-
-    it 'multiplies two numbers together' do
-      get '/multiply/12/11'
-
-    it 'divides the first number by the second number' do
-      get '/divide/612/4'
+  
 end
