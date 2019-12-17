@@ -34,13 +34,12 @@ class App < Sinatra::Base
     when 'subtract'
      "#{@num2 - @num1}"
     when 'multiply'
-      #{@num1 * @num2}
+      "#{@num1 * @num2}"
     when 'divide'
-      @num1 / @num2
+      "#{@num1 / @num2}"
     else 
       'invalid operation please choose (add,subtract,multiply,divide)'
     end
-    binding.pry
   end
   
 end
