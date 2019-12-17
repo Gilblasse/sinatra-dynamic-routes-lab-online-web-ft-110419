@@ -40,6 +40,7 @@ class App < Sinatra::Base
     else 
       'invalid operation please choose (add,subtract,multiply,divide)'
     end
+    binding.pry
   end
   
 end
