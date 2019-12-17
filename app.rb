@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @num = params[:number]
     @phrase = params[:phrase]
     
-    "#{@name.reverse!}"
+    "#{@phrase}"
   end
 
 end
