@@ -25,10 +25,22 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do 
+    params[:number1]
     binding.pry
     case params[:operation]
-    when ''
+    when 'add'
+      
     # params[:number1].to_i "#{params[:operation]}" params[:number2].to_i
   end
+  get '/add/215/93'
 
+    it 'subtracts the second number from the first' do
+      get '/subtract/291/174'
+
+
+    it 'multiplies two numbers together' do
+      get '/multiply/12/11'
+
+    it 'divides the first number by the second number' do
+      get '/divide/612/4'
 end
