@@ -38,7 +38,7 @@ class App < Sinatra::Base
     when 'divide'
       @num1 / @num2
     else 
-      'invalid operation'
+      'invalid operation please choose (add,subtract,multiply,divide)'
     end
   end
   
