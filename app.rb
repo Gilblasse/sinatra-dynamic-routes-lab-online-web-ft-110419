@@ -24,7 +24,7 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do 
-    params.map {|k,v| v }.join(' ')
+    "#{params[:number1]} #{params[:operation]} #{params[:number2]}"
   end
 
 end
